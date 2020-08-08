@@ -1,0 +1,107 @@
+code {
+  background: #d0d0d5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #ffccff;
+}
+
+.nav-item {
+  background-color: #ffccff;
+}
+
+li a {
+  font-size:1.3rem;
+  color:#1F3A93;
+}
+
+.form-container {
+  max-width: 95%;
+  margin-right: 2px
+}
+
+textarea {
+  width: 50%;
+  max-height: 60px;
+  background-color: #ffccff;
+}
+
+#user-stories {
+  font-size: 1.1em;
+  margin-right: 2px
+}
+
+#error-msg {
+  color: red;
+  display: inline;
+  margin-left: 10px;
+}
+
+#sudoku-grid {
+  margin-top: 20px;
+    
+}
+
+.grid {
+  border: 3px solid #ff80ff;
+  border-spacing: 0;
+}
+
+td {
+  border: 1px solid;
+  padding: 0.3em;
+}
+
+input[type="text"] {
+  border: 0px;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+}
+
+.C1, .C2, .C3, .C4, .C5, .C6, .C7, .C8, .C9, .F1, .F2, .F3, .F4, .F5, .F6, .F7, .F8, .F9 {
+  border-bottom: 3px solid;
+}
+
+.A3, .B3, .C3, .D3, .E3, .F3, .G3, .H3, .I3, .A6, .B6, .C6, .D6, .E6, .F6, .G6, .H6, .I6 {
+  border-right: 3px solid;
+}
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .form-container {
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .form-container {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+    textarea {
+  width: 100%;
+  height: 90%;
+  }
+  header {
+  height: 160px;
+    width: 100%;
+}
+  .nav-item {
+  width: 100%;
+}
+}
